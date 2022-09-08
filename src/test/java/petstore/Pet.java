@@ -14,18 +14,18 @@ import static io.restassured.RestAssured.given;
 // 3- Classe
 public class Pet {
    // 3.1 - Atributos
-   String uri * "https://petstore.swagger.io/v2/pet"; // endereço da entidade Pet
+   String uri = "https://petstore.swagger.io/v2/pet"; // endereço da entidade Pet
 
 // 3.2 - Metodos e Funções
-   public String LerJson(String caminhoJson) throws IOException {
-      return new String(Files.readAllBytes(Paths.get(caminhoJson)));
+   public String lerJson(String caminhoJson) throws IOException {
+      return new String(Files.readAllBytes (Paths.get(caminhoJson)));
    }
 
    //incluir - Cread - Post
 
    @Test // identicidar o metodo ou função como teste para o TestNG
-   public void IncluirPet() throws IOException {
-      String JsonBody = LerJson("bd/pet1.json");
+   public void incluirPet() throws IOException {
+      String jsonBody = lerJson("bd/pet1.json");
    // Sintaxe Gherkin
    // Dado - Quando - Então
    // Given - When - Then
@@ -33,7 +33,7 @@ public class Pet {
      given() // Dado
              .contentType("application/json") // comun em API REST - antigas era/"Text/xml"
              .log().all()
-             .body(JsonBody)
+             .body(jsonBody)
 
      .when()//Quando
              .post(uri)
