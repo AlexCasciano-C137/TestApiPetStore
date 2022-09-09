@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-09T17:04:16" hostname="LAPTOP-6O07E3QG" time="3.774">
+<testsuite name="petstore.Pet" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-09T19:28:39" hostname="LAPTOP-6O07E3QG" time="4.778">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="3.774"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="3.863"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="0.912"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -18,7 +19,7 @@ Body:
     "id": 1991051831,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX180724"
     },
     "name": "Snoopy",
     "photoUrls": [
@@ -26,14 +27,14 @@ Body:
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210801,
+            "name": "data"
         }
     ],
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Fri, 09 Sep 2022 17:04:18 GMT
+Date: Fri, 09 Sep 2022 19:28:41 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -46,7 +47,7 @@ Server: Jetty(9.2.9.v20150224)
     "id": 1991051831,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX180724"
     },
     "name": "Snoopy",
     "photoUrls": [
@@ -54,12 +55,53 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210801,
+            "name": "data"
         }
     ],
     "status": "available"
 }
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/1991051831
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 09 Sep 2022 19:28:42 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1991051831,
+    "category": {
+        "id": 1,
+        "name": "AX180724"
+    },
+    "name": "Snoopy",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 20210801,
+            "name": "data"
+        }
+    ],
+    "status": "available"
+}
+O token é AX180724
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

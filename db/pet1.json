@@ -2,7 +2,7 @@
   "id": 1991051831,
   "category": {
     "id": 1,
-    "name": "dog"
+    "name": "AX180724"
   },
   "name": "Snoopy",
   "photoUrls": [
@@ -10,8 +10,8 @@
   ],
   "tags": [
     {
-      "id": 2021,
-      "name": "sta"
+      "id": 20210801,
+      "name": "data"
     }
   ],
   "status": "available"
